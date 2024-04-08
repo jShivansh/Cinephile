@@ -1,0 +1,22 @@
+.contactContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.contactBox{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2em;
+    /* max-width: 50%;
+    max-height: 50%; */
+}
+
+h1{
+    font-weight: bolder;
+    
+}

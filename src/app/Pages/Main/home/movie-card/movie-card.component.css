@@ -1,0 +1,24 @@
+.movieCard{
+    height: 30%;
+    margin: 1em;
+}
+
+img{
+    height: 20em;
+}
+
+.card{
+    align-items: center;
+}
+
+.card-title{
+    font-weight: bolder;
+    text-align: center;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

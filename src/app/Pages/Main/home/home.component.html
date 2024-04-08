@@ -1,0 +1,23 @@
+<div class="homeContainer">
+    <div class="container pt-5">
+        <h1 style="text-align: center;">Search for your favourite movies, series or games</h1>
+        <app-search></app-search>
+    </div>
+    <div class="container movieCard" *ngIf="searchResults.length > 0">
+        <!-- <h2>Search Result:</h2> -->
+        <div *ngFor="let movie of searchResults">
+            <app-movie-card [movie]="movie"></app-movie-card>
+        </div>
+    </div>
+    <div *ngIf="searchResults.length === 0 && searched" class="container movieCard">
+        <h2>Sorry!!! Not found.</h2>
+    </div>
+
+    <mat-paginator
+        *ngIf="searched && displayPage" 
+        [length]="totalLength" 
+        [pageSize]="10"
+        (page)="onPageChange($event)"
+    >
+    </mat-paginator>
+</div>
