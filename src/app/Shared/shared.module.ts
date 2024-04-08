@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MovieDetialComponent } from './Widgets/movie-detial/movie-detial.component';
+import { MaterialModule } from './material/material.module';
 
 
 
@@ -9,7 +10,8 @@ import { MovieDetialComponent } from './Widgets/movie-detial/movie-detial.compon
     MovieDetialComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MaterialModule
   ]
 })
 export class SharedModule { }

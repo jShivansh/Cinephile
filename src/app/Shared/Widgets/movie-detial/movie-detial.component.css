@@ -2,6 +2,7 @@
     background-color: rgb(96, 23, 164);
     color: white;
     padding: 1em;
+    position: relative;
 }
 .title{
     display: flex;
@@ -26,4 +27,10 @@ h3{
 span{
     font-weight: bold;
     text-decoration: wavy;
+}
+
+.closeButton{
+    position: absolute;
+    top: 1em;
+    right: 1em;
 }
