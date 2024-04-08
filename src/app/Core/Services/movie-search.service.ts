@@ -7,7 +7,7 @@ import { BehaviorSubject, Observable } from 'rxjs';
 })
 export class MovieSearchService {
 
-  apiUrl = 'http://www.omdbapi.com/'; //Api is taken from here
+  apiUrl = 'https://www.omdbapi.com/'; //Api is taken from here
   apiKey = 'd8a20f76'; //This is a private key provoided by the site
   searched: boolean = false;
   totalResults: number = 0;
@@ -28,7 +28,7 @@ export class MovieSearchService {
                      .set('apikey', this.apiKey) // Added apikey with value of this.apiKey to the url
                      .set('s', keyword) // Added s with value of keyword to the url
                      .set('page', this.currentPage.toString());
-    //This code will create a url: https://http://www.omdbapi.com/search?apikey=d8a20f76&s=keyword
+    //This code will create a url: http://www.omdbapi.com/search?apikey=d8a20f76&s=keyword
 
     //Making GET request for movie search using keyword
     // console.log(this.http.get(this.apiUrl, {params: params}));
