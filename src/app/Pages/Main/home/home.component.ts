@@ -25,10 +25,9 @@ export class HomeComponent implements OnInit {
     });
     this.currentPage = this.movieService.currentPage;
     //Year wise trial
-    this.movieService.movieSearchByYear('2023').subscribe(data => {
-      console.log('Movies by year:', data);
-      // Handle the movie data here
-    });
+    // this.movieService.movieSearchByYear('2023').subscribe(data => {
+    //   console.log('Movies by year:', data);
+    // });
   }
 
   searchMovies(): void {
